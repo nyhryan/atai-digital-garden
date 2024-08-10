@@ -4,3 +4,5 @@
 
 
 # Welcome!
+
+goto [[test123\|test123]]
