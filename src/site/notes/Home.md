@@ -5,4 +5,4 @@
 
 # Welcome!
 
-goto [[test123\|test123]]
+This is home page
