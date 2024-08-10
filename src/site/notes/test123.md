@@ -18,7 +18,10 @@ app.listen(3000,
 ```
 
 
-> [!NOTE] information!
-
 >[!warning]- warning!
 >caution!
+
+```ad-note
+this is a note
+
+```
