@@ -417,9 +417,11 @@ ul.task-list {
         color: var(--text-accent);
     }
 
-    color: var(--text-accent);
-    background-color: var(--background-primary);
-    transform: translateX(10px);
+    & {
+        color: var(--text-accent);
+        background-color: var(--background-primary);
+        transform: translateX(10px);
+    }
 }
 
 .fullpage-overlay {
