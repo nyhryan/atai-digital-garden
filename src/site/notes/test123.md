@@ -9,7 +9,7 @@ This is test123
 
 Code block test
 
-```js title:index.js
+```js
 import express from "express";
 
 const app = express();
@@ -21,7 +21,3 @@ app.listen(3000,
 >[!warning]- warning!
 >caution!
 
-```ad-note
-this is a note
-
-```
