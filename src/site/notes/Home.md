@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/home/","metatags":{"og:title":"ataidev.cc","og:description":"Welcome to ataidev.cc!"},"pinned":true,"tags":["gardenEntry"]}
 ---
 
 
 # Welcome!
 
-This is home page
+This is home page.
