@@ -6,7 +6,7 @@
 > [!note] Prequisites
 > - Install [CMake](https://cmake.org/download/)
 > - Install [Visual Studio](https://visualstudio.microsoft.com/) for Windows
-> 	- Needed# Microsoft C++ toolset. We can compile and link C/C++ codes with it.
+> 	- Needed for Microsoft C++ toolset, not the IDE. CMake will generate build scripts that uses `cl.exe` compiler.
 > - Install [Ninja](https://ninja-build.org/)
 > - Install [Visual Studio Code](https://code.visualstudio.com/Download)
 > 	- Install [C/C++ Extension Pack for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack). We can easily configure/generate CMake project.
