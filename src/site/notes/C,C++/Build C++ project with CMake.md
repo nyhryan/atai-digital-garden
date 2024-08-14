@@ -15,7 +15,7 @@
 
 > CMake is a tool to manage building of source code. Originally, CMake was designed as a generator for various dialects of `Makefile`, today CMake generates modern buildsystems such as `Ninja` as well as project files for IDEs such as Visual Studio and Xcode.
 
-![Pasted image 20240814193920.png|700](/img/user/000%20Internal/Attachments/Pasted%20image%2020240814193920.png)
+![Pasted image 20240814193920.png|700](/img/user/000%20Assets/Attachments/Pasted%20image%2020240814193920.png)
 
 Basically, **CMake** helps generating build script, platform independantly. CMake will generate a build script based on `CMakeLists.txt`, for example `$ cmake -G "Visual Studio 17 2022" -B build` will create Visual Studio 2022 project inside `build/` directory, including all the source code files you made.
 
@@ -25,8 +25,8 @@ Basically, **CMake** helps generating build script, platform independantly. CMak
 
 ## 1. Open Developer Powershell for VS
 
-![Pasted image 20240814192154.png|300](/img/user/000%20Internal/Attachments/Pasted%20image%2020240814192154.png)
-![Pasted image 20240814192357.png|300](/img/user/000%20Internal/Attachments/Pasted%20image%2020240814192357.png)
+![Pasted image 20240814192154.png|300](/img/user/000%20Assets/Attachments/Pasted%20image%2020240814192154.png)
+![Pasted image 20240814192357.png|300](/img/user/000%20Assets/Attachments/Pasted%20image%2020240814192357.png)
 
 
 First, create an empty directory and `cd` into that directory through `Developer Powershell for VS 2022`.
@@ -35,7 +35,7 @@ Then type `code .` to open Visual Studio Code from that directory. This should w
 
 ## 1.5 Configure CMake Extension
 
-![Pasted image 20240814200545.png|500](/img/user/000%20Internal/Attachments/Pasted%20image%2020240814200545.png)
+![Pasted image 20240814200545.png|500](/img/user/000%20Assets/Attachments/Pasted%20image%2020240814200545.png)
 
 In VS Code settings, search `generator` and use `Ninja` for `Cmake:Generator`. We are going to generate Ninja build script for our C++ project. You can use other build systems if you want. 
 
@@ -52,16 +52,16 @@ project("My First Project")
 
 `cmake_minimum_required(...)` sets the minimum required version of cmake for a project. `project()` gives a name for the project.
 
-![Pasted image 20240814193126.png|300](/img/user/000%20Internal/Attachments/Pasted%20image%2020240814193126.png)
+![Pasted image 20240814193126.png|300](/img/user/000%20Assets/Attachments/Pasted%20image%2020240814193126.png)
 
 After creating `CMakeLists.txt`, check the sidebar. If you don't see CMake extension icon, please close VS Code and reopen it. (Don't forget to reopen VS Code inside VS Developer Powershell!)
 
-![Pasted image 20240814193332.png|300](/img/user/000%20Internal/Attachments/Pasted%20image%2020240814193332.png)
-![Pasted image 20240814193309.png|600](/img/user/000%20Internal/Attachments/Pasted%20image%2020240814193309.png)
+![Pasted image 20240814193332.png|300](/img/user/000%20Assets/Attachments/Pasted%20image%2020240814193332.png)
+![Pasted image 20240814193309.png|600](/img/user/000%20Assets/Attachments/Pasted%20image%2020240814193309.png)
 
 Clicking ✏ Icon next to `Configure - [No Kit Selected]` will show list of tookits in your pc. For me, I have `gcc, clang, cl`. We are going to choose `Visual Studio Community 2022 Release - amd64`. This one is for `from: x64 PC - compile for: x64 PC`.
 
-![Pasted image 20240814193731.png|700](/img/user/000%20Internal/Attachments/Pasted%20image%2020240814193731.png)
+![Pasted image 20240814193731.png|700](/img/user/000%20Assets/Attachments/Pasted%20image%2020240814193731.png)
 
 Configuration log will appear at Output window. By default, build scripts will be generated in `build/` directory. You can configure this in VS Code's CMake extension setting.
 
@@ -93,10 +93,10 @@ When you hit save, VS Code will automatically re-configure the CMake project.
 
 ## 4. 🚀 Let's build!
 
-![Pasted image 20240814201525.png|400](/img/user/000%20Internal/Attachments/Pasted%20image%2020240814201525.png)
+![Pasted image 20240814201525.png|400](/img/user/000%20Assets/Attachments/Pasted%20image%2020240814201525.png)
 Then you can either launch or build by pressing those buttons in CMake sidebar.
 
-![Pasted image 20240814201612.png|400](/img/user/000%20Internal/Attachments/Pasted%20image%2020240814201612.png)
+![Pasted image 20240814201612.png|400](/img/user/000%20Assets/Attachments/Pasted%20image%2020240814201612.png)
 There you go! You have successfully made CMake project!
 
 >[!tip] Using commandline for building
