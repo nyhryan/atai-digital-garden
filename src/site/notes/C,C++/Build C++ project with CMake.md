@@ -80,7 +80,7 @@ int main()
 Now we can write our source code. Then we need to add `main.cpp` to our CMake project. Append a following line into your `CMakeLists.txt`
 
 ```cmake
-// CMakeLists.txt
+# CMakeLists.txt
 cmake_minimum_required(VERSION 3.30)
 project("My First Project")
 
@@ -94,13 +94,10 @@ When you hit save, VS Code will automatically re-configure the CMake project.
 ## 4. 🚀 Let's build!
 
 ![Pasted image 20240814201525.png|400](/img/user/000%20Assets/Attachments/Pasted%20image%2020240814201525.png)
-Then you can either launch or build by pressing those buttons in CMake sidebar.
+Then you can either launch or just build by pressing those buttons in CMake sidebar.
 
 ![Pasted image 20240814201612.png|400](/img/user/000%20Assets/Attachments/Pasted%20image%2020240814201612.png)
-There you go! You have successfully made CMake project!
+Inside `build/` directory, our build output `main.exe` will be built. Then you try running it. There you go! We have created our first CMake project!
 
 >[!tip] Using commandline for building
->```console
->$ cmake --build build 
->```
->If you type the command above from project's root, you can build the project.
+> The command `$ cmake --build build` from project's root will also build our project.
