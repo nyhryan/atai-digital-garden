@@ -161,9 +161,9 @@ Make sure you have `"configurationProvider": "ms-vscode.cmake-tools"` in the JSO
 
 ### Alternative: clangd 
 
-You can use [clangd](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd) intellisense instead of C/C++ extension's one. Although you need to install `clangd`. Check [clangd installation](https://clangd.llvm.org/installation).
+You can use [clangd VS Code Extention](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd) intellisense instead of C/C++ extension's one. Although you need to install `clangd`. Check [clangd installation](https://clangd.llvm.org/installation).
 
-After installing, in your CMake project root, create `.vscode/settings.json` and then add the following line.
+After installing LLVM and clangd Extention , in your CMake project root, create `.vscode/settings.json` and then add the following line.
 
 ```json
 {
@@ -172,7 +172,7 @@ After installing, in your CMake project root, create `.vscode/settings.json` and
 }
 ```
 
-This will disable C/C++ extension's intellisense in our workspace. When you don't want to use `clangd` intellisense, disable the extension and revert the configuration to `"C_Cpp.intelliSenseEngine": "default"` if you changed it globally.
+This will disable C/C++ extension's intellisense in our workspace. When you don't want to use `clangd` intellisense, disable the extension and revert the configuration to `"C_Cpp.intelliSenseEngine": "default"`.
 
 ```cmake
 # CMakeLists.txt
@@ -188,7 +188,7 @@ add_executable(main main.cpp)
 
 Then in your project's `CMakeLists.txt`, add `set(CMAKE_EXPORT_COMPILE_COMMANDS 1)`. Now you are ready to use `clangd` as your main IntelliSense!
 
-![Pasted image 20240814233101.png|300](/img/user/000%20Assets/Attachments/Pasted%20image%2020240814233101.png)
+![Pasted image 20240814233101.png|500](/img/user/000%20Assets/Attachments/Pasted%20image%2020240814233101.png)
 This is the default C/C++ extension's IntelliSense, hovered onto `cout` object.
 
 ![Pasted image 20240814233135.png|600](/img/user/000%20Assets/Attachments/Pasted%20image%2020240814233135.png)
