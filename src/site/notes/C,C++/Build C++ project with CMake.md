@@ -15,10 +15,25 @@
 
 > CMake is a tool to manage building of source code. Originally, CMake was designed as a generator for various dialects of `Makefile`, today CMake generates modern buildsystems such as `Ninja` as well as project files for IDEs such as Visual Studio and Xcode.
 
-![[diagram-export-2024.-8.-14.-오후-7_10_24.png \| 700px]]
+![[diagram-export-2024.-8.-14.-오후-7_10_24.png \| 700]]
 
 Basically, **CMake** helps generating build script, platform independantly. CMake will generate a build script based on `CMakeLists.txt`, for example `$ cmake -G "Visual Studio 17 2022" -B build` will create Visual Studio 2022 project inside `build/` directory, including all the source code files you made.
 
 # Using in Windows 10 Environment
 
-test
+>[!note] Make sure you have all the prequisites mentioned above.
+
+![[Pasted image 20240814192154.png \| 300]]
+![[Pasted image 20240814192357.png \| 300]]
+First, create an empty directory and `cd` into that directory through `Developer Powershell for VS 2022`.
+
+Then type `code .` to open Visual Studio Code from that directory. This should work if you have installed VS Code properly. We need to open VS Code from VS Developer shell because we are going to use Microsoft C++ toolset for CMake's generator environment.
+
+In VS Code, create a new file named `CMakeLists.txt` in current folder's root. Then enter the following two lines.
+
+```cmake
+cmake_minimum_required(VERSION 3.30)
+project("My First Project")
+```
+
+`cmake_minimum_required(...)` sets the minimum required version of cmake for a project. Second line is giving a name that you want for the project.
