@@ -37,3 +37,12 @@ project("My First Project")
 ```
 
 `cmake_minimum_required(...)` sets the minimum required version of cmake for a project. Second line is giving a name that you want for the project.
+
+![[Pasted image 20240814193126.png \| 300]]
+
+After creating `CMakeLists.txt`, check the sidebar. If you don't see CMake extension icon, please close VS Code and reopen it. (Don't forget to reopen VS Code inside VS Developer Powershell!)
+
+![Pasted image 20240814193332.png|300](/img/user/000%20Internal/Attachments/Pasted%20image%2020240814193332.png)
+![[Pasted image 20240814193309.png \| 600]]
+
+Clicking `Configure - [No Kit Selected]` will show list of tookits in your pc. For me, I have `gcc, clang, cl`
