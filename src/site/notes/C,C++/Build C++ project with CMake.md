@@ -15,7 +15,7 @@
 
 > CMake is a tool to manage building of source code. Originally, CMake was designed as a generator for various dialects of `Makefile`, today CMake generates modern buildsystems such as `Ninja` as well as project files for IDEs such as Visual Studio and Xcode.
 
-![[000 Internal/Attachments/Pasted image 20240814193920.png \| 700]]
+![[Pasted image 20240814193920.png \| 700]]
 
 Basically, **CMake** helps generating build script, platform independantly. CMake will generate a build script based on `CMakeLists.txt`, for example `$ cmake -G "Visual Studio 17 2022" -B build` will create Visual Studio 2022 project inside `build/` directory, including all the source code files you made.
 
@@ -23,8 +23,8 @@ Basically, **CMake** helps generating build script, platform independantly. CMak
 
 >[!note] Make sure you have all the prequisites mentioned above.
 
-![[000 Internal/Attachments/Pasted image 20240814192154.png \| 300]]
-![[000 Internal/Attachments/Pasted image 20240814192357.png \| 300]]
+![[Pasted image 20240814192154.png \| 300]]
+![[Pasted image 20240814192357.png \| 300]]
 
 
 First, create an empty directory and `cd` into that directory through `Developer Powershell for VS 2022`.
@@ -40,15 +40,15 @@ project("My First Project")
 
 `cmake_minimum_required(...)` sets the minimum required version of cmake for a project. Second line is giving a name that you want for the project.
 
-![[000 Internal/Attachments/Pasted image 20240814193126.png \| 300]]
+![[Pasted image 20240814193126.png \| 300]]
 
 After creating `CMakeLists.txt`, check the sidebar. If you don't see CMake extension icon, please close VS Code and reopen it. (Don't forget to reopen VS Code inside VS Developer Powershell!)
 
-![[000 Internal/Attachments/Pasted image 20240814193332.png \| 300]]
-![[000 Internal/Attachments/Pasted image 20240814193309.png \| 600]]
+![[Pasted image 20240814193332.png \| 300]]
+![[Pasted image 20240814193309.png \| 600]]
 
 Clicking ✏ Icon next to `Configure - [No Kit Selected]` will show list of tookits in your pc. For me, I have `gcc, clang, cl`. We are going to choose `Visual Studio Community 2022 Release - amd64`. This one is for `from: x64 PC - compile to: x64 PC`.
 
-![[000 Internal/Attachments/Pasted image 20240814193731.png \| 600]]
+![[Pasted image 20240814193731.png \| 600]]
 
 Configuration log will appear at Output window.
