@@ -15,7 +15,7 @@
 
 > CMake is a tool to manage building of source code. Originally, CMake was designed as a generator for various dialects of `Makefile`, today CMake generates modern buildsystems such as `Ninja` as well as project files for IDEs such as Visual Studio and Xcode.
 
-![[diagram-export-2024.-8.-14.-오후-7_10_24.png \| 700]]
+![[Pasted image 20240814193920.png \| 700]]
 
 Basically, **CMake** helps generating build script, platform independantly. CMake will generate a build script based on `CMakeLists.txt`, for example `$ cmake -G "Visual Studio 17 2022" -B build` will create Visual Studio 2022 project inside `build/` directory, including all the source code files you made.
 
@@ -45,4 +45,8 @@ After creating `CMakeLists.txt`, check the sidebar. If you don't see CMake exten
 ![Pasted image 20240814193332.png|300](/img/user/000%20Internal/Attachments/Pasted%20image%2020240814193332.png)
 ![[Pasted image 20240814193309.png \| 600]]
 
-Clicking `Configure - [No Kit Selected]` will show list of tookits in your pc. For me, I have `gcc, clang, cl`
+Clicking ✏ Icon next to `Configure - [No Kit Selected]` will show list of tookits in your pc. For me, I have `gcc, clang, cl`. We are going to choose `Visual Studio Community 2022 Release - amd64`. This one is for `from: x64 PC - compile to: x64 PC`.
+
+![[Pasted image 20240814193731.png \| 600]]
+
+Configuration log will appear at Output window.
