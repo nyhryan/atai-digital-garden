@@ -1,0 +1,3 @@
+.callout:not([data-callout-metadata*=revert]):not(.is-collapsible)>.callout-title .callout-title-inner {
+    font-weight: 600;
+}
