@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/c-c/build-c-project-with-c-make-with-vs-code/","metatags":{"og:title":"Build C++ project with CMake","og:description":"Simple CMake tutorial"},"updated":"2024-08-16T17:16:40.547+09:00"}
+{"dg-publish":true,"permalink":"/c-c/build-c-project-with-c-make-with-vs-code/","metatags":{"og:title":"Build C++ project with CMake","og:description":"Simple CMake tutorial"},"updated":"2024-08-16T17:20:57.332+09:00"}
 ---
 
 
@@ -126,7 +126,7 @@ Inside `build/` directory, our build output `main.exe` will be built. Then try r
 >[!tip] Using commandline for building
 > The command `cmake --build build` from project's root will also build our project.
 
-## 😏5. Extra: VS Code Intellisense
+## 5. 😏Extra: VS Code Intellisense
 
 If your Intellisense stops working, such as autocompletion being totally broken, check the configuration.
 
